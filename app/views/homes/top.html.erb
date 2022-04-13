@@ -1,0 +1,6 @@
+<% flash.each do |message_type, message| %>
+   <%= content_tag :div, message, class: message_type %>
+   <% end %>
+ <h1>TOPpage</h1>
+ <%= link_to "Sign_in", user_session_path %></br>
+ <%= link_to "Sign_up", "/users/sign_up" %>
